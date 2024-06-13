@@ -1,0 +1,34 @@
+{
+  "author": "Pontus Öwre <pontus@owre.se>",
+  "name": "node-typescript-postgres-template",
+  "description": "Project template to kick off your Node.js TypeScript application. Biome for formatting and linting, vitest for speedy testing, and Postgres together with pgweb included.",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "start:dist": "node dist/src/main.js",
+    "clean": "rimraf dist coverage",
+    "prebuild": "pnpm run \"/^clean|lint|test$/\"",
+    "build": "tsc -p tsconfig.release.json",
+    "lint": "biome check .",
+    "prepare": "lefthook install && ts-patch install",
+    "test": "vitest --run",
+    "test:coverage": "vitest --coverage",
+    "test:watch": "vitest",
+    "typecheck": "tspc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.1",
+    "@types/node": "^20.14.2",
+    "@vitest/coverage-v8": "^1.6.0",
+    "lefthook": "1.6.15",
+    "rimraf": "^5.0.7",
+    "ts-patch": "^3.2.0",
+    "tsx": "^4.15.2",
+    "typescript": "^5.4.5",
+    "typescript-transform-paths": "^3.4.7",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
+  }
+}
