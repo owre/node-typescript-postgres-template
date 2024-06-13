@@ -10,7 +10,7 @@ Project template to kick off your Node.js TypeScript application. Biome for form
 * [Biome](https://biomejs.dev/): Format, lint, and more in a fraction of a second. No more wasting your time (and sanity) getting ESLint to work.
 * [Vitest](https://vitest.dev/): A next generation, Jest compatible, testing framework. Enables speedy and efficient testing.
 * [Postgres](https://www.postgresql.org/) with [pgweb](https://sosedoff.github.io/pgweb/): The World's Most Advanced Open Source Relational Database included together with pgweb for seamless database management. Access the web interface at port 8082.
-* [Lefthook] Fast, powerful and simple git hooks manager
+* [Lefthook](https://github.com/evilmartians/lefthook) Fast, powerful and simple git hooks manager
 
 ## Prepared npm scripts
 
